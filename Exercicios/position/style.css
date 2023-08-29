@@ -1,0 +1,19 @@
+#pai{
+    background-color: blueviolet;
+    height: 350px;
+    width: 350px;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+}
+#filho{
+    background-color: lawngreen;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
+}
