@@ -14,6 +14,12 @@
             border-collapse: collapse;
         }
 
+        caption{
+            background-color: rgba(182, 180, 180, 0.63);
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
         td,th{
             border: 1px solid black;
             padding: 10px;
@@ -43,10 +49,13 @@
     -->
 
     <table>
+        <caption>
+            População das unidades federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col"> Estado</th>
+                <th scope="col" id="pop">População </th>
             </tr>
         </thead>
         <tbody>
@@ -161,7 +170,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>139.617.851</strong></td>
             </tr>
         </tfoot>
