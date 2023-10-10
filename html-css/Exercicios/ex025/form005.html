@@ -12,24 +12,25 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" autocomplete="on">
-        <fieldset>
+    <form action="cadastro.php">
+        <Fieldset>
             <legend>Sexo</legend>
-            <input type="radio" name="sexo" id="isxm"> <label for="isxm">Masculino</label>
-            <input type="radio" name="sexo" id="isxf"> <label for="isxf">Feminino</label>
-        </fieldset>
+            <input type="radio" name="sexo" id="isxm" value="M"> <label for="isxm" >Masculino</label>
+            <input type="radio" name="sexo" id="isxf" value="F"> <label for="isxf">Feminino</label>
+        </Fieldset>
 
         <fieldset>
             <legend>Esportes favoritos</legend>
-            <input type="checkbox" name="espfut" id="iespfut"> <label for="iespfut">Futebol</label> <br>
-            <input type="checkbox" name="espvol" id="iespvol"> <label for="iespvol">Volêi</label> <br>
-            <input type="checkbox" name="espbsk" id="iespbsk"> <label for="iespbsk">Basquete </label><br>
-            <input type="checkbox" name="espten" id="iespten"> <label for="iespten">Tênis</label>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> <br>
+            <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Volêi</label> <br>
+            <input type="checkbox" name="bsk" id="ibsk"> <label for="ibsk">Basquete</label> <br>
+            <input type="checkbox" name="ten" id="iten"> <label for="iten">Tênis</label>
         </fieldset>
+
         <p>
             <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">
         </p>
-    </form>
+    </form>   
 </body>
 </html>
