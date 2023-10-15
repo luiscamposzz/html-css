@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de inputs</h1>
+    <form action="cadastro.php" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="Nome completo">
+            </div>
+            <div>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Endereço de email">
+            </div>
+            <div>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha">
+            </div>
+            <div>
+                <label for="">Sexo:</label>
+                <label for="isxm">Masculino</label>
+                <input type="radio" name="sexo" id="isxm">
+                <label for="isxf">Feminino</label>
+                <input type="radio" name="sexo" id="isxf">
+            </div>
+            <div>
+                <label for="inum">Sua idade:</label>
+                <input type="number" name="num" id="inum" min="6" max="120">
+            </div>
+            <div>
+                <label for="ipeso">Peso:</label>
+                <input type="range" name="peso" id="ipeso" min="20" max="200" oninput="ival.innerHTML = Number(ipeso.value)">
+                <output id="ival">5</output>
+            </div>
+            <div>
+                <label for="itel">Celular com DDD:</label>
+                <input type="tel" name="tel" id="itel" placeholder="(xx) xxxx-xxxx" maxlength="11">
+            </div>
+            <div>
+                <label for="ies">Estado:</label>
+                <select name="" id="">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="BH">Belo Horizonte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="BA">Bahia</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informações adicionais</legend>
+            <div>
+                <label for="iselec"> Linguagens preferidas:</label> <br>
+                <label for="ipy">Python</label>
+                <input type="checkbox" name="Py" id="ipy">
+                <label for="ijs">Javascript</label>
+                <input type="checkbox" name="javascript" id="ijs">
+                <label for="iphp">PHP</label>
+                <input type="checkbox" name="php" id="iphp">
+                <label for="ijava">Java</label>
+                <input type="checkbox" name="Java" id="ijava">
+            </div>
+            <div>
+                <label for="icor">Cor preferida:</label>
+                <input type="color" name="cor" id="icor">
+            </div>
+            <div>
+                <label for="ihora">Horário de Cadastro:</label>
+                <input type="time" name="hora" id="ihora">
+            </div>
+            <div>
+                <label for="idata">Data do cadastro:</label>
+                <input type="date" name="data" id="idata">
+            </div>
+            <div>
+                <label for="imes"> Mês de cadastro:</label>
+                <input type="month" name="mes" id="imes">
+            </div>
+            <div>
+                <label for="">Escolher arquivo:</label>
+                <input type="file" name="file" id="ifile">
+            </div>
+            <div>
+                <label for="imsg">Mensagem:</label> <br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </div>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
