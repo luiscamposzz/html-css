@@ -1,0 +1,7 @@
+/*Midias tipes não usam parênteses
+  Midias features sim
+  Aparelho deitado (landscape)*/
+body{
+   background-image: url(../imagens/cev-landscape.jpg);
+   position: left bottom;
+}    
