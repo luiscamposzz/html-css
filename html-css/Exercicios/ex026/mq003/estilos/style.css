@@ -29,4 +29,5 @@ h1{
     /*Declarações paisagem*/
     @media screen and (orientation:landscape) {
         body{ background-image: url(../imagens/cev-landscape.jpg);position: left bottom;
-} 
+   }
+}
