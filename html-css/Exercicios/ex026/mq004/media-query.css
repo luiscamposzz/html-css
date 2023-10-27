@@ -14,8 +14,6 @@
     *{
         font-family: 'Courier New', Courier, monospace;
     }
-    body{
-        background-image: url(imagens/back-print.jpg);
     }
     main{
         border: 2px solid black;
@@ -24,16 +22,28 @@
         text-shadow: none;
         color: black;
     }
-}
+
 @media screen and (min-width:769px) and (max-width:992px) {
     body{
         background-image: url(imagens/back-tablet.jpg);
     }
+    #tv{display:none ;}
+    #phone{display: none;}
+    #tablet{display: block;}
+    #desktop{display: none;}
+    #print{display: none;}
+  
 }
 @media screen and (min-width:992px) and (max-width:1200px) {
     body{
         background-image: url(imagens/back-pc.jpg);
     }
+    #tv{display:none ;}
+    #phone{display: none;}
+    #tablet{display: none;}
+    #desktop{display: block;}
+    #print{display: none;}
+
 }
 @media screen and (min-width:1200px){
     body{
@@ -42,4 +52,9 @@
             width: 700px;
         }
     }
+    #tv{display:block;}
+    #phone{display: none;}
+    #tablet{display: none;}
+    #desktop{display: none;}
+    #print{display: none;}
 }

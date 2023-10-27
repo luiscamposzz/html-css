@@ -38,6 +38,8 @@ img{    display: block;
     margin: auto;
 }
 
-#tv,#print,#desktop,#tablet{
-    display: none;
-}
+#tv{display:none ;}
+#phone{display: block;}
+#tablet{display: none;}
+#desktop{display: none;}
+#print{display: none;}
